@@ -1,71 +1,37 @@
-body{
+body {
     height: 600px;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    display:flex;
-    
+    display: flex;
+    gap: 10px;
 }
-.container-1{
-    width:30px;
-    height:200px;
+
+.container {
+    width: 20px;
+    height: 150px;
     background-color: black;
-    margin:2px;
     border-radius: 25px;
+    animation: waves 1s infinite ease-in-out;
+    transform-origin: center;
 }
-.container-2{
-    width:30px;
-    height:200px;
-    background-color: black;
-    margin:2px;
-    border-radius: 25px;
+
+.container-1 { animation-delay: 0.1s; }
+.container-2 { animation-delay: 0.2s; }
+.container-3 { animation-delay: 0.3s; }
+.container-4 { animation-delay: 0.4s; }
+.container-5 { animation-delay: 0.5s; }
+.container-6 { animation-delay: 0.6s; }
+.container-7 { animation-delay: 0.7s; }
+.container-8 { animation-delay: 0.8s; }
+.container-9 { animation-delay: 0.9s; }
+
+@keyframes waves {
+    0%, 100% {
+        transform: scaleY(0.3);
+    }
+    50% {
+        transform: scaleY(1.2);
+    }
 }
-.container-3{
-    width:30px;
-    height:200px;
-    background-color: black;
-    margin:2px;
-    border-radius: 25px;
-}
-.container-4{
-    width:30px;
-    height:200px;
-    background-color: black;
-    margin:2px;
-    border-radius: 25px;
-}
-.container-5{
-    width:30px;
-    height:200px;
-    background-color: black;
-    margin:2px;
-    border-radius: 25px;
-}
-.container-6{
-    width:30px;
-    height:200px;
-    background-color: black;
-    margin:2px;
-    border-radius: 25px;
-}
-.container-7{
-    width:30px;
-    height:200px;
-    background-color: black;
-    margin:2px;
-    border-radius: 25px;
-}
-.container-8{
-    width:30px;
-    height:200px;
-    background-color: black;
-    margin:2px;
-    border-radius: 25px;
-}
-.container-9{
-    width:30px;
-    height:200px;
-    background-color: black;
-    margin:2px;
-    border-radius: 25px;
-}
+
 
